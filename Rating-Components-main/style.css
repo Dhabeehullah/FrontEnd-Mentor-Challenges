@@ -1,0 +1,117 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top:25%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(213, 19%, 18%);
+    padding: 15px;
+    border-radius: 5%;
+
+}
+
+.cont1 > *{
+    margin-top: 20px;
+}
+.cont2 > * {
+    margin-top: 10px;
+
+}
+
+.container2{
+    display: flex;
+    justify-content:space-around;
+}
+
+.cir{
+    color: hsl(217, 12%, 63%);
+    background-color:hsl(213, 6%, 32%) ;
+    border-radius: 50%;
+    padding: 15px 19px;
+    cursor: pointer;
+    border-style: none;
+}
+.cir:hover{
+   background-color:hsl(217, 12%, 63%) ;
+   color: white;
+}
+
+.imagestar{
+    margin-left: rem;
+    margin-top: 1rem;
+    background-color:hsl(213, 6%, 32%) ;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.submit{
+    border-style: none;
+    padding: 10px 6rem;
+    border-radius: 2rem;
+    background-color:  hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.para{
+    color:hsl(217, 12%, 63%) ;
+    font-size: 15px;
+    max-width: 300px;
+}
+
+.hidden{
+    display: none;
+}
+.cont2{
+    text-align: center;
+    padding: 20px;
+}
+.value{
+    color: hsl(25, 97%, 53%);
+    opacity: 0.6;
+    background-color:hsl(210, 11%, 21%) ;
+    padding:10px 10px;
+    width: fit-content;
+    border-radius:20px;
+    margin-left: 58px;
+    margin-top: 20px;
+}
+
+.colorforcircle{
+    background-color:  hsl(25, 97%, 53%) !important;
+    color: white !important;
+}
+
+@media(min-width:501px){
+    body{
+        margin-top: 15%;
+    }
+}
