@@ -1,0 +1,135 @@
+:root{
+    
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-dark-blue : hsl(217, 54%, 11%);
+--Very-dark-blue : hsl(216, 50%, 16%);
+--Very-dark-blue : hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    position: relative;
+    height: 100vh;
+  
+}
+
+.container{
+    display: block;
+    max-width:300px;
+    background-color:hsl(216, 50%, 16%);
+    font-family: 'Outfit', sans-serif; 
+    color:var(--White);
+    padding: 2rem;
+    border-radius: 3%;
+    position: absolute;
+    left: 38%;
+    top: 15%;
+
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+   
+}
+
+p{
+    font-size: 15px;
+    color:var(--Soft-blue);
+    
+}
+
+h1{
+    font-size: large;
+}
+
+.cy{
+    color: var(--Cyan);
+}
+
+hr{
+    background-color: var(--Soft-blue);
+    height: 0.08px;
+    border: none;
+}
+
+.container>*{
+    margin-bottom:1rem ;
+}
+
+span{
+    color: var(--Soft-blue);
+}
+
+.con3{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0;
+    align-items: center;
+    margin-top:20px;
+}
+
+.siz{
+    font-size: 13px;
+   
+    
+}
+
+.col{
+    color: var(--Soft-blue);
+    
+}
+
+.b{
+    color: var(--White);
+    margin-left: 3px;
+}
+.b:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+h1:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+.eye{
+    position: relative;
+}
+
+.eye div{
+    background-color: var(--Cyan);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.eye div:hover{
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+
+.eye div img{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media(max-width:375px){
+    .container{
+        max-width: 300px;
+        
+    }
+}
